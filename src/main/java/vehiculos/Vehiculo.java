@@ -31,7 +31,7 @@ public class Vehiculo {
 	}
 	
 	public Vehiculo() {
-		totalVehiculos++;
+	
 	}
 	
 	public static int getCantidadVehiculos() {
