@@ -9,7 +9,7 @@ public class Camioneta extends Vehiculo{
 	
 	
 	
-	public Camioneta(String placa, int puertas,String nombre, int precio, int peso, Fabricante fabricante,int velocidadMaxima,boolean volco) {
+	public Camioneta(String placa, int puertas,String nombre, int precio, int peso, Fabricante fabricante,boolean volco) {
 
 		super.placa = placa;
 		super.puertas = puertas;
