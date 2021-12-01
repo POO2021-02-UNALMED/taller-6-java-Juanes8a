@@ -34,7 +34,7 @@ public class Vehiculo {
 		totalVehiculos++;
 	}
 	
-	public int getCantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return Vehiculo.totalVehiculos;
 	}
 	public static void setCantidadVehiculos(int cantidad){
