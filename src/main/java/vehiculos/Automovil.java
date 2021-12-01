@@ -4,14 +4,14 @@ public class Automovil extends Vehiculo{
 	public int puestos;
 	private static int totalAuto;
 	
-	public Automovil(String string, String string2, int i, int j, Fabricante f, int k) {
+	public Automovil(String placa, String nombre, int i, int precio, Fabricante fabricante, int peso) {
 		
-		super.placa = string;
-		super.nombre = string2;
+		super.placa = placa;
+		super.nombre = nombre;
 		super.velocidadMaxima = i;
-		super.precio = j;
-		super.fabricante = f;
-		super.peso = k;
+		super.precio = precio;
+		super.fabricante = fabricante;
+		super.peso = peso;
 		
 		super.puertas = 4;
 		super.velocidadMaxima = 100;
@@ -28,7 +28,7 @@ public class Automovil extends Vehiculo{
 	public void setPuestos(int puestos) {
 		this.puestos = puestos;
 	}
-	public int getTotalAuto() {
+	public static int getTotalAuto() {
 		return totalAuto;
 	}
 	public void setTotalAuto(int totalAuto) {

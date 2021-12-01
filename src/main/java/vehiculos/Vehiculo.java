@@ -12,7 +12,7 @@ public class Vehiculo {
 	protected Fabricante fabricante;
 	
 	
-	public static int totalVehiculos;
+	protected static int totalVehiculos;
 	
 	private static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 	
@@ -27,8 +27,12 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		Vehiculo.totalVehiculos++;
+		fabricantes.add(fabricante);
 	}
 	
+	public Vehiculo() {
+		
+	}
 	
 	public int getCantidadVehiculos() {
 		return Vehiculo.totalVehiculos;
@@ -40,7 +44,7 @@ public class Vehiculo {
 	}
 	
 	public String vehiculosPorTipo(){
-		return	"Automoviles: " + (Automovil.getTotalAutomovil()+"") + '\n' + "Camionetas: " + Camioneta.getTotalCamioneta()+"" + '\n' + "Camiones: " + Camion.getTotalCamion()+"";	
+		return	"Automoviles: " + (Automovil.getTotalAuto()+"") + '\n' + "Camionetas: " + Camioneta.getTotalCamioneta()+"" + '\n' + "Camiones: " + Camion.getTotalCam()+"";	
 	}
 	
 	public String getPlaca() {

@@ -1,16 +1,28 @@
 package vehiculos;
 
-public class Camioneta extends Vehículo{
+public class Camioneta extends Vehiculo{
 
 	private boolean volco;
-	private int velocidadMaxima; 
-	private String traccion;
-	public Camioneta(int placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion,
-			Fabricante fabricante, boolean volco, int velocidadMaxima2, String traccion2) {
-		super(placa, puertas, velocidadMaxima, nombre, precio, peso, traccion, fabricante);
+	private static int totalCamioneta;
+	
+	
+	
+	
+	
+	public Camioneta(String string, int i, String string2, int j, int k, Fabricante f, boolean volco) {
+
+		super.placa = string;
+		super.puertas = i;
+		super.nombre = string2;
+		super.precio = j;
+		super.peso = k;
+		super.fabricante = f;
+		super.velocidadMaxima = 90;
+		super.traccion = "4X4";
 		this.volco = volco;
-		velocidadMaxima = velocidadMaxima2;
-		traccion = traccion2;
+
+		totalCamioneta++;
+		Vehiculo.totalVehiculos++;
 	}
 	public boolean isVolco() {
 		return volco;
@@ -18,18 +30,13 @@ public class Camioneta extends Vehículo{
 	public void setVolco(boolean volco) {
 		this.volco = volco;
 	}
-	public int getVelocidadMaxima() {
-		return velocidadMaxima;
+	public int getTotalCamioneta() {
+		return totalCamioneta;
 	}
-	public void setVelocidadMaxima(int velocidadMaxima) {
-		this.velocidadMaxima = velocidadMaxima;
+	public void setVelocidadMaxima(int totalCamioneta) {
+		Camioneta.totalCamioneta = totalCamioneta;
 	}
-	public String getTraccion() {
-		return traccion;
-	}
-	public void setTraccion(String traccion) {
-		this.traccion = traccion;
-	}
+
 	
 	
 }
