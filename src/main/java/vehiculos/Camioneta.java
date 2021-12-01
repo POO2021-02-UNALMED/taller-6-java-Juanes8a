@@ -30,7 +30,7 @@ public class Camioneta extends Vehiculo{
 	public void setVolco(boolean volco) {
 		this.volco = volco;
 	}
-	public int getTotalCamioneta() {
+	public static int getTotalCamioneta() {
 		return totalCamioneta;
 	}
 	public void setVelocidadMaxima(int totalCamioneta) {
