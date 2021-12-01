@@ -9,14 +9,14 @@ public class Camioneta extends Vehiculo{
 	
 	
 	
-	public Camioneta(String string, int i, String string2, int j, int k, Fabricante f, boolean volco) {
+	public Camioneta(String placa, int puertas,String nombre, int precio, int peso, Fabricante fabricante,int velocidadMaxima,boolean volco) {
 
-		super.placa = string;
-		super.puertas = i;
-		super.nombre = string2;
-		super.precio = j;
-		super.peso = k;
-		super.fabricante = f;
+		super.placa = placa;
+		super.puertas = puertas;
+		super.nombre = nombre;
+		super.precio = precio;
+		super.peso = peso;
+		super.fabricante = fabricante;
 		super.velocidadMaxima = 90;
 		super.traccion = "4X4";
 		this.volco = volco;

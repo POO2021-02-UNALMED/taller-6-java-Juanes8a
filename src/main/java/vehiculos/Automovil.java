@@ -4,11 +4,11 @@ public class Automovil extends Vehiculo{
 	public int puestos;
 	private static int totalAuto;
 	
-	public Automovil(String placa, String nombre, int i, int precio, Fabricante fabricante, int peso) {
+	public Automovil(String placa, String nombre, int velocidadMaxima, int precio, Fabricante fabricante, int peso) {
 		
 		super.placa = placa;
 		super.nombre = nombre;
-		super.velocidadMaxima = i;
+		super.velocidadMaxima = velocidadMaxima;
 		super.precio = precio;
 		super.fabricante = fabricante;
 		super.peso = peso;

@@ -49,6 +49,22 @@ public class Fabricante {
 		this.totalFabricante = totalFabricante;
 	}
 	
-
+	public static Fabricante fabricaMayorVentas() {
+		
+		Fabricante Mayorfabricante = fabricantes.get(0);
+		
+		
+		for(Fabricante f : fabricantes) {
+			
+			if(Collections.frequency(Numerofabricantes, Mayorfabricante) < Collections.frequency(Numerofabricantes, f)){
+				
+				Mayorfabricante = f;
+				
+			}
+			
+			
+		}
+		return Mayorfabricante;
+	}
 	
 }
