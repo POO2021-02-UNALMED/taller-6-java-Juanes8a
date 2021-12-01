@@ -16,7 +16,8 @@ public class Automovil extends Vehiculo{
 		super.puertas = 4;
 		super.velocidadMaxima = 100;
 		super.traccion = "FWD";
-
+		totalAuto++;
+		Vehiculo.totalVehiculos++;
 	}
 	
 	
