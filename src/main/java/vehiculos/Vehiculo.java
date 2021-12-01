@@ -26,12 +26,12 @@ public class Vehiculo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
-		Vehiculo.totalVehiculos++;
+		totalVehiculos++;
 		fabricantes.add(fabricante);
 	}
 	
 	public Vehiculo() {
-		
+		totalVehiculos++;
 	}
 	
 	public int getCantidadVehiculos() {
